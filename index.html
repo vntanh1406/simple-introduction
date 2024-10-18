@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Võ Ngọc Trâm Anh's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff69b4;
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .avatar-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.1);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #fff;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .column {
+      flex: 1 1 48%;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      flex: 1; 
+    }
+
+    section:hover {
+      background-color: #ffccdd;
+    }
+
+    h2 {
+      color: #ff69b4;
+      font-size: 28px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #ff69b4;
+      margin-top: 5px;
+      transition: width 0.3s ease;
+    }
+
+    h2:hover::after {
+      width: 100px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    p .italic-light {
+      font-style: italic;
+      color: #808080;
+    }
+
+    .tech-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tech-item {
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #333;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .tech-item:hover {
+      transform: scale(1.05);
+      background-color: #ff69b4;
+    }
+
+    footer {
+      background-color: #ff69b4;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="avatar-container">
+      <div class="avatar">
+        <img src="avt.jpg" alt="Your Avatar">
+      </div>
+    </div>
+    <div>
+      <h1>Vo Ngoc Tram Anh</h1>
+      <p class="quote">"Less code, less bugs"</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="column">
+      <div class="row">
+        <section>
+          <h2>About Me</h2>
+          <p>I am Tram Anh <span class="italic-light">(also known as Vo Ann)</span>, a third-year student majoring in Information Technology, specializing in Data Science at the University of Management and Technology in Ho Chi Minh City (UMT).</p>
+        </section>
+        <section>
+          <h2>Achievements</h2>
+          <ul>
+            <li>Champion of the International Collegiate Programming Contest UMT 2024</li>
+            <li>Outstanding Student of UMT for the academic year 2023-2024</li>
+            <li>Bronze Medal at the National Mathematics Olympiad 2024</li>
+            <li>Finalist (Top 10) at the BU x Berkeley SkyDeck Fund Hackathon 2024</li>
+          </ul>
+        </section>
+      </div>
+      
+      <div class="row">
+        <section>
+          <h2>Contact</h2>
+          <p>Email: anh.2201700158@st.umt.edu.vn</p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/anh-vo-24bb751b4" target="_blank">LinkedIn Profile</a></p>
+        </section>
+        <section class="tech-stack">
+          <h2>Tech Stack</h2>
+          <div class="tech-items">
+            <div class="tech-item" style="background-color: #ffcccb;">C++</div>
+            <div class="tech-item" style="background-color: #add8e6;">Python</div>
+            <div class="tech-item" style="background-color: #90ee90;">Kotlin</div>
+            <div class="tech-item" style="background-color: #ffebcd;">C#</div>
+            <div class="tech-item" style="background-color: #ffa07a;">Django</div>
+            <div class="tech-item" style="background-color: #d3d3d3;">Keras</div>
+            <div class="tech-item" style="background-color: #f08080;">NumPy</div>
+            <div class="tech-item" style="background-color: #ffd700;">Pandas</div>
+            <div class="tech-item" style="background-color: #ffb6c1;">PyTorch</div>
+            <div class="tech-item" style="background-color: #b0e0e6;">scikit-learn</div>
+            <div class="tech-item" style="background-color: #ffdab9;">TensorFlow</div>
+            <div class="tech-item" style="background-color: #ffdead;">Adobe Photoshop</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Made by Vo Ngoc Tram Anh ^.^</p>
+  </footer>
+
+</body>
+</html>
